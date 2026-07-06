@@ -100,7 +100,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.maxjubayeryt.copper"
+        applicationId "com.lukeiscooldev.goldenlaunch"
         minSdkVersion 21
         targetSdkVersion 34
         versionCode 10000000
@@ -122,9 +122,9 @@ android {
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.customDebug
-            resValue "string", "app_name", "Copper (Debug)"
-            resValue "string", "app_short_name", "Copper (Debug)"
-            resValue 'string', 'application_package', 'com.maxjubayeryt.copper.debug'
+            resValue "string", "app_name", "Golden Launcher"
+            resValue "string", "app_short_name", "Golden"
+            resValue 'string', 'application_package', 'com.lukeiscooldev.goldenlaunch'
             resValue 'string', 'storageProviderAuthorities', 'com.maxjubayeryt.copper.scoped.gamefolder.debug'
             resValue 'string', 'shareProviderAuthority', 'com.maxjubayeryt.copper.scoped.controlfolder.debug'
         }
