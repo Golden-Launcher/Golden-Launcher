@@ -15,7 +15,7 @@
     <!-- BACKGROUND SYSTEM (GOLDEN METAL THEME) -->
     <!-- Dark golden/brown layered surfaces -->
 
-    <color name="background_app">#1a1200</color>
+    <color name="background_app">#3d2e00</color>
     <color name="background_overlay">#3d2e00</color>      
     <color name="background_surface">#3d2e00</color>      
     <color name="divider">#ffd700</color>                
