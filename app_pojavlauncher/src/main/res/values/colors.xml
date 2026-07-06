@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Control Buttons (copper glow style - softened, not neon orange anymore) -->
-    <color name="control_button_color">#66C97A2B</color>
-    <color name="control_button_pressed_color">#99A85C1A</color>
+    <!-- Control Buttons (GOLDEN THEME - bright and luxe) -->
+    <color name="control_button_color">#4cffd700</color>
+    <color name="control_button_pressed_color">#4db8860b</color>
 
-    <!-- Main Button (hot copper highlight - toned down for consistency) -->
-    <color name="minebutton_color">#ff5900</color>
-    <color name="cu_bg_app">#1A0E00</color>
-    <color name="cu_bg_status_bar">#2A1800</color>
-    <color name="cu_bg_bottom_bar">#231200</color>
-    <color name="cu_divider">#3D2200</color>
+    <!-- Main Button (bright golden) -->
+    <color name="minebutton_color">#ffd700</color>
+    <color name="cu_bg_app">#1a1200</color>
+    <color name="cu_bg_status_bar">#1a1200</color>
+    <color name="cu_bg_bottom_bar">#2a1f00</color>
+    <color name="cu_divider">#ffd700</color>
 
-    <!-- BACKGROUND SYSTEM (COPPER METAL THEME) -->
-    <!-- Dark copper layered surfaces -->
+    <!-- BACKGROUND SYSTEM (GOLDEN METAL THEME) -->
+    <!-- Dark golden/brown layered surfaces -->
 
-    <color name="background_app">#181818</color>
-    <color name="background_overlay">#464646</color>      
-    <color name="background_surface">#464646</color>      
-    <color name="divider">#464646</color>                
-    <color name="background_status_bar">#232323</color>
-    <color name="background_bottom_bar">#272727</color>
+    <color name="background_app">#1a1200</color>
+    <color name="background_overlay">#3d2e00</color>      
+    <color name="background_surface">#3d2e00</color>      
+    <color name="divider">#ffd700</color>                
+    <color name="background_status_bar">#1a1200</color>
+    <color name="background_bottom_bar">#2a1f00</color>
 
-    <!-- TEXT (FIXED: removed orange tint, improved readability) -->
-    <color name="primary_text">#F5F5F5</color>
-    <color name="secondary_text">#B8B8B8</color>
+    <!-- TEXT (crisp white for contrast against dark gold) -->
+    <color name="primary_text">#ffffff</color>
+    <color name="secondary_text">#ffc200</color>
 
     <!-- ── Midnight Blue preset ───────────────────────────────────────── -->
     <color name="mb_bg_app">#0D1B2A</color>
