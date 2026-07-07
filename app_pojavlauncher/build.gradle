@@ -122,8 +122,8 @@ android {
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.customDebug
-            resValue "string", "app_name", "Golden Launcher"
-            resValue "string", "app_short_name", "Golden"
+            resValue "string", "app_name", "Golden Launcher (Minecraft: Java Edition for Android)"
+            resValue "string", "app_short_name", "Golden Launcher"
             resValue 'string', 'application_package', 'com.lukeiscooldev.goldenlaunch'
             resValue 'string', 'storageProviderAuthorities', 'com.maxjubayeryt.copper.scoped.gamefolder.debug'
             resValue 'string', 'shareProviderAuthority', 'com.maxjubayeryt.copper.scoped.controlfolder.debug'
