@@ -298,4 +298,6 @@
     <string name="notif_channel_name">General</string>
     <string name="notif_channel_id" translatable="false">channel_id</string>
     <string name="lazy_service_default_title">Golden Foreground Service</string>
-    <string name="mcl_sett
+
+
+</resources>
