@@ -3,10 +3,10 @@
 <img src="https://raw.githubusercontent.com/Golden-Launcher/Golden-Launcher/refs/heads/v3_openjdk/app_pojavlauncher/src/main/assets/amethyst.png" align="left" width="130" height="130" alt="Golden Launcher Logo">
 
 <p align="center">
-  <img src="https://img.shields.io/github/commit-activity/m/CopperLauncher/Copper-Android" alt="GitHub commit activity"/>
+  <img src="https://img.shields.io/github/commit-activity/m/Golden-Launcher/Golden-Launcher" alt="GitHub commit activity"/>
   <img src="https://img.shields.io/badge/platform-Android-green" alt="Platform"/>
   <img src="https://img.shields.io/badge/minSdk-26-blue" alt="Min SDK"/>
-  <img src="https://github.com/CopperLauncher/Copper-Android/workflows/Android%20CI/badge.svg" alt="Android CI"/>
+  <img src="https://github.com/Golden-Launcher/Golden-Launcher/workflows/Android%20CI/badge.svg" alt="Android CI"/>
   <img src="https://badges.crowdin.net/pojavlauncher/localized.svg" alt="Crowdin"/>
   <a href="https://discord.gg/j8GTQv3YvY"><img src="https://img.shields.io/discord/1355213558631366897?color=5865F2&logo=discord&logoColor=white&label=&style=flat" alt="Discord"></a>
   <a href="https://github.com/CopperLauncher"><img src="https://img.shields.io/badge/github-CopperLauncher-orange?logo=github" alt="GitHub"></a>
