@@ -8,20 +8,16 @@
   <img src="https://img.shields.io/badge/minSdk-26-blue" alt="Min SDK"/>
   <img src="https://github.com/Golden-Launcher/Golden-Launcher/workflows/Android%20CI/badge.svg" alt="Android CI"/>
   <img src="https://badges.crowdin.net/pojavlauncher/localized.svg" alt="Crowdin"/>
-  <a href="https://discord.gg/j8GTQv3YvY"><img src="https://img.shields.io/discord/1355213558631366897?color=5865F2&logo=discord&logoColor=white&label=&style=flat" alt="Discord"></a>
-  <a href="https://github.com/CopperLauncher"><img src="https://img.shields.io/badge/github-CopperLauncher-orange?logo=github" alt="GitHub"></a>
-  <a href="https://www.curseforge.com/members/maxjubayeryt/projects"><img src="https://img.shields.io/badge/curseforge-maxjubayeryt-orange?logo=curseforge" alt="CurseForge"></a>
-  <a href="https://modrinth.com/user/maxjubayeryt"><img src="https://img.shields.io/badge/modrinth-maxjubayeryt-green?logo=modrinth" alt="Modrinth User"></a>
-  <a href="https://modrinth.com/organization/copperlauncher"><img src="https://img.shields.io/badge/modrinth-CopperLauncher-green?logo=modrinth" alt="Modrinth Org"></a>
-</p>
+  <a href="https://discord.gg/nta5RctJQT"><img src="https://img.shields.io/discord/1355213558631366897?color=5865F2&logo=discord&logoColor=white&label=&style=flat" alt="Discord"></a>
+  <a href="https://github.com/Golden-Launcher"><img src="https://img.shields.io/badge/github-GoldenLauncher-orange?logo=github" alt="GitHub"></a>
 </p>
 
-Copper is a fork of [Amethyst](https://github.com/AngelAuraMC/Amethyst-Android) that allows you to play Minecraft: Java Edition on your Android devices.
+Golden is a fork of [Copper](https://github.com/CopperLauncher/Copper-Android) that allows you to play Minecraft: Java Edition on your Android devices.
 
 ## Table of Contents
 
 * [Introduction](#introduction)
-* [Getting Copper](#getting-copper)
+* [Getting Golden](#getting-golden)
 * [Building](#building)
     * [Quick Build (Recommended)](#quick-build-recommended)
     * [Detailed Build](#detailed-build)
@@ -36,26 +32,26 @@ Copper is a fork of [Amethyst](https://github.com/AngelAuraMC/Amethyst-Android) 
 
 ## Introduction
 
-* Copper is a Minecraft: Java Edition launcher for Android based on [Boardwalk](https://github.com/zhuowei/Boardwalk), [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher) and [Amethyst Launcher](https://github.com/AngelAuraMC/Amethyst-Android).
+* Golden Launcher is a Minecraft: Java Edition launcher for Android based on [Boardwalk](https://github.com/zhuowei/Boardwalk), [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher), [Amethyst Launcher](https://github.com/AngelAuraMC/Amethyst-Android), and [Copper Launcher](https://github.com/CopperLauncher/Copper-Android).
 * This launcher can launch almost all available Minecraft versions ranging from rd-132211 to 26.x snapshots (including Combat Test versions)
 * Modding via Forge and Fabric are also supported.
 * This repository contains source code for Android.
 
-## Getting Copper
+## Getting Golden
 
-You can get Copper via three methods:
+You can get Golden Launcher via three methods:
 
-1. **Nightly** Download the latest artifact from [Nightly.link](https://nightly.link/CopperLauncher/Copper-Android/workflows/android/v3_openjdk?preview)
-2. **Releases:** Download the latest prebuilt app [from Releases](https://github.com/CopperLauncher/Copper-android/releases/)
+1. **Nightly** Download the latest artifact from [Nightly.link](https://nightly.link/Golden-Launcher/Golden-Launcher/workflows/android/v3_openjdk?preview)
+2. **Releases:** Download the latest prebuilt app [from Releases](https://github.com/Golden-Launcher/Golden-Launcher/releases/)
 3. **Build from Source:** Follow the [building instructions](#building) below.
 
 ## Building
 
 ### Quick Build (Recommended)
 
-The easiest way to build Copper is to use the pre-built JREs provided by our CI.
+The easiest way to build Golden Launcher is to use the pre-built JREs provided by our CI.
 
-1. Clone the repository: `git clone --recursive https://github.com/CopperLauncher/Copper-Android.git`
+1. Clone the repository: `git clone --recursive https://github.com/Golden-Launcher/Golden-Launcher.git`
 2. Build the launcher: `./gradlew :app_pojavlauncher:assembleDebug` (Use `gradlew.bat` on Windows)
 
 The built APK will be located in `app_pojavlauncher/build/outputs/apk/debug/`.
@@ -95,21 +91,22 @@ If you need more control over the build process, follow these steps:
 
 ## Known Issues
 
-See Copper's [issue tracker](https://github.com/CopperLauncher/Copper-Android/issues) for a list of known issues and their current status.
+See Golden Launcher's [issue tracker](https://github.com/Golden-Launcher/Golden-Launcher/issues) for a list of known issues and their current status.
 
 ## Support
 
-For support, please join our [Discord server](https://discord.gg/j8GTQv3YvY)
+For support, please join our [Discord server](https://discord.gg/nta5RctJQT)
 
 ## License
 
-Copper is licensed under [GNU LGPLv3](https://github.com/CopperLauncher/Copper-Android/blob/v3_openjdk/LICENSE).
+Golden Launcher is licensed under [GNU LGPLv3](https://github.com/Golden-Launcher/Golden-Launcher/blob/v3_openjdk/LICENSE).
 
 ## Credits & Dependencies
 
 * [Boardwalk](https://github.com/zhuowei/Boardwalk) (JVM Launcher): Unknown License/[Apache License 2.0](https://github.com/zhuowei/Boardwalk/blob/master/LICENSE) or GNU GPLv2.
 * [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher): [GLGPL](https://github.com/PojavLauncherTeam/PojavLauncher/blob/v3_openjdk/LICENSE)
 * [Amethyst Launcher](https://github.com/AngelAuraMC/Amethyst-Android/): [LGPL-3.0 license](https://github.com/AngelAuraMC/Amethyst-Android/blob/v3_openjdk/LICENSE)
+* [Copper Launcher](https://github.com/CopperLauncher/Copper-Android): [LGPL-3.0 license](https://github.com/CopperLauncher/Copper-Android/blob/v3_openjdk/LICENSE)
 * [MojoLauncher](https://github.com/MojoLauncher/MojoLauncher/): [LGPL-3.0 license](https://github.com/AngelAuraMC/Amethyst-Android/blob/v3_openjdk/LICENSE)
 * Android Support Libraries: [Apache License 2.0](https://android.googlesource.com/platform/prebuilts/maven_repo/android/+/master/NOTICE.txt).
 * [GL4ES](https://github.com/AngelAuraMC/gl4es): [MIT License](https://github.com/ptitSeb/gl4es/blob/master/LICENSE).
@@ -130,6 +127,7 @@ Copper is licensed under [GNU LGPLv3](https://github.com/CopperLauncher/Copper-A
 * [sdl2-compat](https://github.com/libsdl-org/sdl2-compat): [zlib License](https://github.com/libsdl-org/sdl2-compat/blob/main/LICENSE.txt)
 * Thanks to [MCHeads](https://mc-heads.net) for providing Minecraft avatars.
 * Thanks to [Modrinth](https://api.modrinth.com/), [CurseForge](https://docs.curseforge.com/rest-api/) and [McLo.gs](https://api.mclo.gs) for providing us the free API's.
+* Special thanks to **maxjubayeryt** for the original Golden Launcher design aesthetic that inspired this project.
 
 ## Roadmap
 
@@ -142,4 +140,4 @@ Future plans include:
 * Improving stability and performance.
 * Enhancing the mod installation experience.
 
-We welcome community feedback and suggestions for our roadmap.  Please feel free to open a feature request in our [issue tracker](https://github.com/CopperLauncher/Copper-Android/issues).
+We welcome community feedback and suggestions for our roadmap.  Please feel free to open a feature request in our [issue tracker](https://github.com/Golden-Launcher/Golden-Launcher/issues).
