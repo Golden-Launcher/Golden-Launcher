@@ -126,9 +126,9 @@
         app:layout_constraintStart_toEndOf="@+id/left_sidebar"
         app:layout_constraintBottom_toTopOf="@+id/bottom_bar" />
 
-    <!-- RIGHT CONTENT PANE - holds fragment -->
+    <!-- RIGHT CONTENT PANE - holds fragment using existing ID -->
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/container_fragment"
+        android:id="@+id/right_pane_container"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@+id/top_divider"
