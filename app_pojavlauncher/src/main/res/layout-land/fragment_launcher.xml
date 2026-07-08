@@ -1,222 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/fragment_menu_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/bgMainDrawable">
+    android:orientation="vertical"
+    android:background="?attr/bgMainDrawable"
+    android:padding="16dp">
 
-    <!-- Guideline: left sidebar = 33%, right pane = 67% -->
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/pane_guideline"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.33" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOLDEN LAUNCHER"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
 
-    <!-- ══════════════ LEFT SIDEBAR — full height, no bottom bar under it ══════════════ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By LukeiscoolDEV"
+        android:textSize="12sp"
+        android:textColor="?attr/colorTextSecondary"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v1.0-source"
+        android:textSize="11sp"
+        android:textColor="?attr/colorTextSecondary"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Changes in v1.0:"
+        android:textSize="11sp"
+        android:textColor="?attr/colorTextSecondary"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Built from source\n• Golden color theme\n• New landscape UI\n• Enhanced design\n• 🇵🇭 Made with pride"
+        android:textSize="11sp"
+        android:textColor="?attr/colorTextSecondary"
+        android:layout_marginBottom="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="?attr/colorDivider"
+        android:layout_marginBottom="12dp" />
+
     <ScrollView
-        android:id="@+id/left_sidebar"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fillViewport="true"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/pane_divider">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_1sdp"
-                android:background="?attr/colorDivider" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Golden Launcher"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorTextPrimary"
+                android:layout_marginBottom="8dp" />
 
-            <!-- QUICK ACTIONS -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/mcl_section_quick_actions"
-                android:textAllCaps="true"
-                android:textSize="@dimen/_11ssp"
+                android:text="Golden Launcher is a Minecraft Java Edition launcher for Android with support for mods, custom controls, and a beautiful golden aesthetic.\n\nJoin our Discord community for support and updates!"
+                android:textSize="11sp"
                 android:textColor="?attr/colorTextSecondary"
-                android:letterSpacing="0.08"
-                android:paddingHorizontal="@dimen/padding_heavy"
-                android:paddingTop="@dimen/padding_large"
-                android:paddingBottom="@dimen/padding_medium" />
-
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/mod_store_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="match_parent"
-                android:drawableStart="@drawable/ic_add"
-                android:text="@string/mcl_button_mod_store" />
-
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/custom_control_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="match_parent"
-                android:drawableStart="@drawable/ic_menu_custom_controls"
-                android:text="@string/mcl_option_customcontrol" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_1sdp"
-                android:background="?attr/colorDivider"
-                android:layout_marginTop="@dimen/padding_medium" />
-
-            <!-- INSTANCE TOOLS -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/mcl_section_instance_tools"
-                android:textAllCaps="true"
-                android:textSize="@dimen/_11ssp"
-                android:textColor="?attr/colorTextSecondary"
-                android:letterSpacing="0.08"
-                android:paddingHorizontal="@dimen/padding_heavy"
-                android:paddingTop="@dimen/padding_large"
-                android:paddingBottom="@dimen/padding_medium" />
-
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/open_files_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="match_parent"
-                android:drawableStart="@drawable/ic_folder_managed"
-                android:text="@string/mcl_button_manage_mods" />
-
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/open_directory_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="match_parent"
-                android:drawableStart="@drawable/ic_folder"
-                android:text="@string/mcl_button_open_directory" />
-
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/install_jar_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="match_parent"
-                android:drawableStart="@drawable/ic_menu_install_jar"
-                android:text="@string/main_install_jar_file" />
-
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/share_logs_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="match_parent"
-                android:drawableStart="@drawable/ic_menu_share"
-                android:text="@string/main_share_logs" />
-
-            <!-- Hidden: kept for back-compat -->
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/settings_menu_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="match_parent"
-                android:drawableStart="@drawable/ic_sharp_settings_24"
-                android:text="@string/mcl_button_settings"
-                android:visibility="gone" />
-
-            <!-- Stubs so portrait code still finds these IDs without crashing -->
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/news_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="match_parent"
-                android:drawableStart="@drawable/ic_menu_news"
-                android:text="@string/mcl_tab_wiki"
-                android:visibility="gone" />
-
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/discord_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="match_parent"
-                android:drawableStart="@drawable/ic_discord"
-                android:text="@string/mcl_button_discord"
-                android:visibility="gone" />
+                android:layout_marginBottom="12dp" />
 
         </LinearLayout>
     </ScrollView>
 
-    <!-- Thin vertical divider -->
-    <View
-        android:id="@+id/pane_divider"
-        android:layout_width="@dimen/padding_tiny"
-        android:layout_height="0dp"
-        android:background="?attr/colorDivider"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/pane_guideline"
-        app:layout_constraintEnd_toStartOf="@id/pane_guideline" />
-
-    <!-- ══════════════ RIGHT CONTENT PANE ══════════════ -->
-    <!-- Rounded corners via background shape + clipToOutline -->
-    <!-- RIGHT PANE — bottom constrained to top of bottom_bar.
-         When bottom_bar is GONE it collapses to 0 height at parent bottom,
-         so right pane automatically fills the full height. No anchor needed. -->
-    <FrameLayout
-        android:id="@+id/right_pane_container"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="6dp"
-        android:background="@drawable/bg_right_pane"
-        android:clipToOutline="true"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottom_bar"
-        app:layout_constraintStart_toEndOf="@id/pane_divider"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <!-- ══════════════ BOTTOM BAR — single container, GONE hides all + collapses space ══════════════ -->
-    <LinearLayout
-        android:id="@+id/bottom_bar"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_48sdp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:background="?attr/colorBgBottomBar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/pane_divider"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <!-- Invisible background stub so MainMenuFragment.mBottomBarBg still resolves -->
-        <View
-            android:id="@+id/_background_display_view"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:visibility="gone" />
-
-        <com.kdt.mcgui.mcVersionSpinner
-            android:id="@+id/mc_version_spinner"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:paddingStart="8dp"
-            android:background="@android:color/transparent"
-            android:drawableEnd="@drawable/spinner_arrow"
-            app:drawableEndPadding="@dimen/_1sdp"
-            app:drawableEndSize="@dimen/_12sdp"
-            app:drawableStartIntegerScaling="true"
-            app:drawableStartSize="@dimen/_36sdp" />
-
-        <ImageButton
-            android:id="@+id/edit_profile_button"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/_8sdp"
-            android:background="?android:attr/selectableItemBackground"
-            android:src="@drawable/ic_edit_profile" />
-
-        <com.kdt.mcgui.MineButton
-            android:id="@+id/play_button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="8dp"
-            android:text="@string/main_play"
-            android:textAllCaps="true" />
-
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
