@@ -1,6 +1,6 @@
 <h1 align="center">Golden Launcher</h1>
 
-<img src="https://raw.githubusercontent.com/CopperLauncher/Copper-Android/refs/heads/v3_openjdk/app_pojavlauncher/src/main/assets/amethyst.png" align="left" width="130" height="130" alt="Golden Launcher Logo">
+<img src="https://raw.githubusercontent.com/Golden-Launcher/Golden-Launcher/refs/heads/v3_openjdk/app_pojavlauncher/src/main/assets/amethyst.png" align="left" width="130" height="130" alt="Golden Launcher Logo">
 
 <p align="center">
   <img src="https://img.shields.io/github/commit-activity/m/CopperLauncher/Copper-Android" alt="GitHub commit activity"/>
