@@ -56,7 +56,6 @@ jobs:
 
       - name: Build Debug .apk
         run: |
-          # Build the launcher
           gradle :app_pojavlauncher:assembleDebug
           mv app_pojavlauncher/build/outputs/apk/debug/app_pojavlauncher-debug.apk out/app-debug.apk
 
@@ -88,3 +87,29 @@ jobs:
         with:
           name: app-debug-noruntime
           path: out/app-debug-noruntime.*
+
+      - name: Discord Notification - Success
+        if: success()
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
+          status: ${{ job.status }}
+          title: "Golden Launcher Build Success"
+          description: |
+            Commit: ${{ github.event.head_commit.message }}
+            Author: ${{ github.event.head_commit.author.name }}
+            Branch: ${{ github.ref_name }}
+          color: 0xffd700
+
+      - name: Discord Notification - Failure
+        if: failure()
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
+          status: ${{ job.status }}
+          title: "Golden Launcher Build Failed"
+          description: |
+            Commit: ${{ github.event.head_commit.message }}
+            Author: ${{ github.event.head_commit.author.name }}
+            Branch: ${{ github.ref_name }}
+          color: 0xff0000
